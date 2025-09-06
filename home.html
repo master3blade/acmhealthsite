@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bay Area Acupuncture | Healing, Balance, Wellness</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .hero-bg {
+            background-image: url('https://placehold.co/1600x900/FDE8E8/9F1239?text=Ancient+Healing+Arts');
+            background-size: cover;
+            background-position: center;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out;
+        }
+    </style>
+    <!-- Swiper.js CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 shadow-sm">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center justify-between">
+                    <a href="#">
+                      <img src="https://www.acmhealthcenter.com/acmlogo.gif" alt="ACM Health Center Logo" class="h-10 md:h-12 object-contain">
+                    </a>
+                    <!-- rest of nav -->
+                </div>                  
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-stone-600 hover:text-rose-700 transition-colors">About</a>
+                    <a href="#services" class="text-stone-600 hover:text-rose-700 transition-colors">Services</a>
+                    <a href="#testimonials" class="text-stone-600 hover:text-rose-700 transition-colors">Testimonials</a>
+                    <a href="#faq" class="text-stone-600 hover:text-rose-700 transition-colors">FAQ</a>
+                    <a href="#contact" class="text-stone-600 hover:text-rose-700 transition-colors">Contact</a>
+                </nav>
+                <div class="hidden md:flex items-center gap-4">
+                     <a href="tel:650-579-5660" class="flex items-center gap-2 text-rose-800 font-semibold">
+                        <i data-lucide="phone" class="h-4 w-4"></i>
+                        <span>650-579-5660</span>
+                    </a>
+                    <a href="#schedule" class="bg-rose-700 text-white font-semibold px-5 py-2 rounded-lg hover:bg-rose-800 transition-transform hover:scale-105">Book Now</a>
+                </div>
+                <button id="mobile-menu-button" class="md:hidden">
+                    <i data-lucide="menu" class="h-6 w-6 text-rose-800"></i>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+            <a href="#about" class="block py-2 text-stone-600 hover:text-rose-700">About</a>
+            <a href="#services" class="block py-2 text-stone-600 hover:text-rose-700">Services</a>
+            <a href="#testimonials" class="block py-2 text-stone-600 hover:text-rose-700">Testimonials</a>
+            <a href="#faq" class="block py-2 text-stone-600 hover:text-rose-700">FAQ</a>
+            <a href="#contact" class="block py-2 text-stone-600 hover:text-rose-700">Contact</a>
+             <a href="tel:415-555-1234" class="block py-2 mt-2 text-rose-800 font-semibold text-center">650-579-5560</a>
+            <a href="#schedule" class="block mt-2 w-full text-center bg-rose-700 text-white font-semibold px-5 py-2 rounded-lg hover:bg-rose-800">Book Now</a>
+        </div>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section class="pt-32 md:pt-48 pb-12 relative">
+            <!-- Swiper Container -->
+            <div class="swiper hero-swiper h-[70vh] md:h-[90vh]">
+                <div class="swiper-wrapper">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide bg-cover bg-center relative" style="background-image: url('https://clinic.acumedic.com/wp-content/uploads/acupuncture_chinese_medicine_herbs_tcm_clinic_london_acumedic_camdem-1920x1280.jpg')">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center text-white px-4">
+                            <div>
+                                <h1 class="text-4xl md:text-6xl font-bold mb-4">Rediscover Harmony and Vitality</h1>
+                                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-stone-100">Harnessing the ancient wisdom of acupuncture to restore your body's natural flow of energy (Qi).</p>
+                                <a href="#schedule" class="bg-white text-rose-800 font-bold px-8 py-4 rounded-lg text-lg hover:bg-stone-100 transition-transform hover:scale-105 inline-block">Schedule Your Appointment</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide bg-cover bg-center relative" style="background-image: url('https://osh.imgix.net/production/heros/talking-with-your-doctor.jpg?auto=compress%2Cformat&fit=fit&fp-x=0.5&fp-y=0.5&q=70&ratio=&w=990&s=2e062a107f99e40d084069091dc8c76c')">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center text-white px-4">
+                            <div>
+                                <h1 class="text-4xl md:text-6xl font-bold mb-4">Personalized Natural Care</h1>
+                                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-stone-100">Every body is different. We treat the root, not just the symptoms.</p>
+                                <a href="#services" class="bg-white text-rose-800 font-bold px-8 py-4 rounded-lg text-lg hover:bg-stone-100 transition-transform hover:scale-105 inline-block">Explore Services</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide bg-cover bg-center relative" style="background-image: url('https://img.p.mapq.st/?url=https://s3-media0.fl.yelpcdn.com/bphoto/2bu9HCml8Pu9ghcYv88Osg/l.jpg?w=3840&q=75')">
+                        <div class="absolute inset-0 bg-black/40 flex items-center justify-center text-center text-white px-4">
+                            <div>
+                                <h1 class="text-4xl md:text-6xl font-bold mb-4">Restore Balance, Inside & Out</h1>
+                                <p class="text-lg md:text-xl max-w-2xl mx-auto mb-6 text-stone-100">Let your energy flow again with the power of Traditional Chinese Medicine.</p>
+                                <a href="#faq" class="bg-white text-rose-800 font-bold px-8 py-4 rounded-lg text-lg hover:bg-stone-100 transition-transform hover:scale-105 inline-block">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Optional Swiper navigation -->
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-prev text-white"></div>
+                <div class="swiper-button-next text-white"></div>
+            </div>
+        </section>
+
+
+        <!-- About Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="flex flex-col md:flex-row items-center gap-12">
+                    <div class="md:w-1/2">
+                        <img src="https://www.physicianpartnersofamerica.com/wp-content/uploads/2023/07/Acupunture-scaled-1-1030x687.jpeg" alt="Jennifer, Licensed Acupuncturist" class="rounded-lg shadow-xl w-full">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold text-rose-900 mb-4">Your Partner in Holistic Health</h2>
+                        <p class="text-stone-600 mb-4 leading-relaxed">
+                            Established in 1979, ACM Health Center is a leading Chinese medical clinic chain in Northern California. Our family of highly educated medical experts and acupuncturists has been trained at top universities in both China and the U.S., blending decades of experience in clinical practice, research, and teaching.
+                        </p>
+                        <p class="text-stone-600 mb-6 leading-relaxed">
+                            For millennia, Chinese physicians have used acupuncture, Tui Na, and herbs to help the body heal naturally. At ACM Health Center, we blend these ancient techniques with modern Western medicine, empowering your body to restore its own health.
+                        </p>
+                        <a href="#schedule" class="text-rose-700 font-semibold hover:underline">Discover the path to balance &rarr;</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Services Section -->
+            <section id="services" class="py-20 bg-stone-50">
+                <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-rose-900">Our Services</h2>
+                    <p class="text-stone-600 mt-4 max-w-2xl mx-auto">
+                    Comprehensive holistic treatments tailored to your individual needs.
+                    </p>
+                </div>
+            
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Service 1 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="mb-4 text-rose-700">
+                        <i data-lucide="activity" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-800 mb-2">Acupuncture Therapy</h3>
+                    <p class="text-stone-600 mb-4">
+                        Stimulate the body's healing abilities and promote natural pain relief using ancient Chinese techniques.
+                    </p>
+                    <a href="#schedule" class="text-rose-700 font-semibold hover:underline">Book Now →</a>
+                    </div>
+            
+                    <!-- Service 2 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="mb-4 text-rose-700">
+                        <i data-lucide="leaf" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-800 mb-2">Herbal Medicine</h3>
+                    <p class="text-stone-600 mb-4">
+                        Customized Chinese herbal formulas that support internal balance and treat the root cause of illness.
+                    </p>
+                    <a href="#schedule" class="text-rose-700 font-semibold hover:underline">Learn More →</a>
+                    </div>
+            
+                    <!-- Service 3 -->
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition">
+                    <div class="mb-4 text-rose-700">
+                        <i data-lucide="hands" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold text-stone-800 mb-2">Tui Na Massage</h3>
+                    <p class="text-stone-600 mb-4">
+                        Chinese medical massage to relieve tension, improve circulation, and support your healing journey.
+                    </p>
+                    <a href="#schedule" class="text-rose-700 font-semibold hover:underline">Explore Treatment →</a>
+                    </div>
+                </div>
+                </div>
+            </section>
+  
+        </section>
+
+        <!-- FAQ Section -->
+        <section id="faq" class="py-20 bg-stone-50">
+            <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold text-rose-900">Frequently Asked Questions</h2>
+                <p class="text-stone-600 mt-4 max-w-2xl mx-auto">
+                Answers to common questions about acupuncture and our practice.
+                </p>
+            </div>
+            <div class="max-w-3xl mx-auto space-y-4">
+                <!-- FAQ Item -->
+                <div class="faq-item border border-stone-200 rounded-lg overflow-hidden">
+                <button class="faq-question w-full text-left flex justify-between items-center p-5 font-semibold text-stone-800 bg-white hover:bg-stone-50 transition-colors">
+                    <span>What does acupuncture feel like? Does it hurt?</span>
+                    <span data-lucide="chevron-down" class="icon-wrapper h-5 w-5 transition-transform duration-300"></span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="p-5 text-stone-600 bg-white border-t border-stone-200">
+                    Most people find acupuncture to be very relaxing. The needles are extremely thin — you might feel a tiny prick followed by warmth, tingling, or dull ache. These are good signs the Qi is moving.
+                    </p>
+                </div>
+                </div>
+        
+                <!-- Another FAQ Item -->
+                <div class="faq-item border border-stone-200 rounded-lg overflow-hidden">
+                <button class="faq-question w-full text-left flex justify-between items-center p-5 font-semibold text-stone-800 bg-white hover:bg-stone-50 transition-colors">
+                    <span>Will insurance cover my acupuncture treatments?</span>
+                    <span data-lucide="chevron-down" class="icon-wrapper h-5 w-5 transition-transform duration-300"></span>
+                </button>
+                <div class="faq-answer max-h-0 overflow-hidden transition-all duration-500 ease-in-out">
+                    <p class="p-5 text-stone-600 bg-white border-t border-stone-200">
+                    Many insurance plans do cover acupuncture. Contact your provider to confirm. We can also provide a superbill for reimbursement.
+                    </p>
+                </div>
+                </div>
+        
+                <!-- Add more FAQ items as needed... -->
+            </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section id="testimonials" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-rose-900">What Our Patients Say</h2>
+                    <p class="text-stone-600 mt-4 max-w-2xl mx-auto">
+                        Real reviews from people whose lives have been transformed through acupuncture.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-8">
+                    <!-- Testimonial 1 -->
+                    <div class="bg-stone-50 border border-stone-200 p-6 rounded-lg shadow-sm">
+                        <p class="text-stone-700 italic mb-4">
+                            “I woke up in the middle of night with severe hip and lower back pain and could barely move. When I was able to get out of bed I called ACM Health Center and got an appointment with Dr. Ian Lin. After an acupuncture and heat treatment. I felt better and later today I had almost no pain and could move around much easier. I will go back for another treatment next week, but I feel so much better already!”
+                        </p>
+                        <div class="font-semibold text-rose-800">— Steven H. , Foster City</div>
+                    </div>
+
+                    <!-- Testimonial 2 -->
+                    <div class="bg-stone-50 border border-stone-200 p-6 rounded-lg shadow-sm">
+                        <p class="text-stone-700 italic mb-4">
+                            “Great place for acupuncture! I have been going here for more than 10 years. They have helped me through many different ailments and I always leave feeling better. There is free parking in the garage below. All the acupuncturists are kind and caring. I have also brought my entire family here.”
+                        </p>
+                        <div class="font-semibold text-rose-800">— Fanny S. , San Francisco</div>
+                    </div>
+
+                    <!-- Testimonial 3 -->
+                    <div class="bg-stone-50 border border-stone-200 p-6 rounded-lg shadow-sm">
+                        <p class="text-stone-700 italic mb-4">
+                            “I hate needles. I can't help it. I abusolutely hate them. Nevertheless, I have been seeing Dr. Lin several years now for my allergies. And take it from someone who really hates needles: Dr. Lin is very gentle and skilled. Most of the time, I don't even feel the needles go in! Over the years, he also took care of my chronic neck pain and digestive problems. I am so glad I found him. I recommend him to all my friends.                          ”
+                        </p>
+                        <div class="font-semibold text-rose-800">— Melissa S. , San Mateo</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+  
+
+
+        <!-- Calendly Scheduling Section -->
+        <section id="schedule" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-4xl font-bold text-rose-900">Begin Your Healing Journey</h2>
+                    <p class="text-stone-600 mt-4 max-w-2xl mx-auto">Booking your first appointment is easy. Choose a time that works for you below.</p>
+                </div>
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget min-h-[700px] rounded-lg shadow-xl overflow-hidden" data-url="https://calendly.com/acmhealthcenter" style="min-width:320px;height:700px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
+                 <!-- IMPORTANT: Replace "https://calendly.com/d/your-calendly-link" with your actual Calendly scheduling link. -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-stone-800 text-stone-300 py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h3 class="text-2xl font-bold text-white mb-4">ACM Health Center</h3>
+            <p class="mb-2"><a href="https://maps.app.goo.gl/c4eGszbnFpaXBT7n9" class = "hover:text-rose-400">417 North San Mateo Drive, San Mateo, CA 94401</a></p>
+            <p class="mb-2"><a href="tel:650-579-5560" class="hover:text-rose-400">650-579-5560</a></p>
+            <p class="mb-8"><a href="mailto:ianlin@bay-area-acupuncture.com" class="hover:text-rose-400">ianlin@bay-area-acupuncture.com</a></p>
+            <p class="text-sm text-stone-500">&copy; 2025 ACM Health Center. All Rights Reserved.</p>
+        </div>
+    </footer>
+    <!-- Swiper.js JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Initialize Lucide icons
+            lucide.createIcons();
+    
+            // Mobile menu toggle
+            const mobileMenuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+    
+            mobileMenuButton.addEventListener('click', () => {
+                mobileMenu.classList.toggle('hidden');
+            });
+    
+            const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+            mobileMenuLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                });
+            });
+    
+            // FAQ toggle logic
+                const faqItems = document.querySelectorAll('.faq-item');
+
+                faqItems.forEach((item) => {
+                const question = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = question.querySelector('.icon-wrapper');
+
+                question.addEventListener('click', () => {
+                    const isOpen = answer.style.maxHeight && answer.style.maxHeight !== '0px';
+
+                    // // Close all others (optional – remove this block to allow multiple open)
+                    // faqItems.forEach((otherItem) => {
+                    // const otherAnswer = otherItem.querySelector('.faq-answer');
+                    // const otherIcon = otherItem.querySelector('.icon-wrapper');
+                    // if (otherItem !== item) {
+                    //     otherAnswer.style.maxHeight = '0px';
+                    //     if (otherIcon) otherIcon.style.transform = 'rotate(0deg)';
+                    // }
+                    // });
+
+                    // Toggle this item
+                    if (!isOpen) {
+                    answer.style.maxHeight = answer.scrollHeight + 'px';
+                    icon.style.transform = 'rotate(180deg)';
+                    } else {
+                    answer.style.maxHeight = '0px';
+                    icon.style.transform = 'rotate(0deg)';
+                    }
+                });
+            });
+        });
+        new Swiper('.hero-swiper', {
+            loop: true,
+            autoplay: {
+                delay: 10000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+
+</body>
+</html>
+
